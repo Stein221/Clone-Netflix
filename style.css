@@ -1,0 +1,117 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --claro:rgb(226, 218, 218);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+/*elementos base*/
+
+body{
+    background-color:var(--preta);
+    color: aliceblue;
+}
+
+header .container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: #E50914;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: 40px;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    margin-right: 8px;
+    margin: 8px;
+    padding-right: 6px;
+    color: var(--claro);
+    font-size: 18px;
+}
+
+header nav a:hover{
+    color: var(--vermelho);
+}
+
+/*filme principal*/
+
+main .container{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/banner.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .titulo{
+    padding: 12px;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+
+}
+
+main .container p{
+    color: var(--claro);
+    box-sizing: border-box;
+    width: 480px;
+    padding: 12px;
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 10px;
+    
+}
+
+.botao{
+    margin-left: 12px;
+    margin-right: 15px;
+    border: none;
+    padding: 12px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.50);
+    color: aliceblue;
+    cursor:pointer;
+    
+}
+
+
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.container{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.banner .container{
+    width: 100%;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+    
+}
+.item{
+    width: 85%;
+}
